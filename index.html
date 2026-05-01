@@ -234,9 +234,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <div class="section">
   <div class="section-header" onclick="toggle('team')">
     <div class="section-title"><div class="section-icon" style="background:#fff2e0">👥</div>Team &amp; Contacten</div>
-    <span class="chevron open" id="chev-team">▼</span>
+    <span class="chevron" id="chev-team">▼</span>
   </div>
-  <div class="section-body open" id="body-team">
+  <div class="section-body" id="body-team">
     <div class="team-grid">
 
       <div class="team-card">
@@ -1147,12 +1147,6 @@ function toggle(id) {
   if (!isOpen) loadMapsIn(id);
 }
 
-(function() {
-  var b = document.getElementById('body-team');
-  var c = document.getElementById('chev-team');
-  if (b) b.classList.add('open');
-  if (c) c.classList.add('open');
-})();
 
 var matchData = {
   'Mexico – Zuid-Afrika':{stadium:'Estadio Azteca',city:'Mexico City',gmq:'Estadio+Azteca+Mexico+City',kickoff:'do 11 jun, 21:00 NL',phase:'Groepsfase A'},
